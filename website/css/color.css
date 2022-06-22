@@ -1,0 +1,8 @@
+body{
+    --navbar-BG:#343A40;
+    --navbar-link: white;
+    --navbar-link-left: #35a2b8;
+}
+body.light{
+    --navbar-BG:#E3F2FD;
+}
