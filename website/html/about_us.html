@@ -3,32 +3,31 @@
 <head>
   <title>GameBreakers</title>
 
-  <link rel="icon" type="image/x-icon" href="mypfp.jpg">
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/color.css">
-  <link rel="stylesheet" href="http://font-awesome/path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
+
+  
 </head>
 <body>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
   <nav>
     <ul>
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about_game.html">About game</a></li>
       <li><a href="about_us.html">About us</a></li>
       <div style="float:right">
-        <li><a><label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label></a></li>
-        <li class="down"><a href="about_game.html#download">Download</a></li>
+        <li class="colorMode">
+          <div class="colorModeDark nav-link open" style="padding: 0;"><i class="fas fa-sun"></i></div>
+          <div class="colorModeLight nav-link close" style="padding: 0;"><i class="fas fa-moon"></i></div>
+        </li>
+        <li class="down"><a href="GameBreakers-main.zip">Download</a></li>
       </div>
     </ul>
   </nav>
 
-  
+  <script src="../js/color_mode.js"></script>
   </body>
 </html>

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--navbar-BG);
+    height: 46px;
+}
+
+li {
+float: left;
+}
+
+li a,
+li i{
+display: block;
+color:  var(--navbar-link);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/*   Download    */
+li.down a{
+    color: var(--navbar-link);
+}
+li.down a:hover{
+    color: var(--navbar-link-left);
+    transition: 0.25s;
+}
+li a:hover {
+color: rgb(208, 203, 203);
+} 
+
+/*      Color Mode Icon     */
+li.colorMode div.close,
+li.colorMode.active div.open{
+    display: inline;
+}
+li.colorMode div.open,
+li.colorMode.active div.close{
+    display: inline;
+}

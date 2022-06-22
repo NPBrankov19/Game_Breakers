@@ -5,4 +5,6 @@ body{
 }
 body.light{
     --navbar-BG:#E3F2FD;
+    --navbar-link: #343A40;
+    --navbar-link-left: #007bff;
 }
