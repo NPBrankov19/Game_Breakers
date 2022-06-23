@@ -3,42 +3,78 @@
 body{
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    
 }
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: var(--navbar-BG);
-    height: 46px;
+    transition: 0.25;
+    align-items: center;
 }
 
-li {
+nav li {
 float: left;
 }
+#right-link{
+    float:right;
+}
 
-li a,
-li i{
+nav li a,
+nav li i{
 display: block;
+position: relative;
 color:  var(--navbar-link);
 text-align: center;
-padding: 14px 16px;
+padding: 17px 16px;
 text-decoration: none;
+}
+nav li a{
+    letter-spacing: 0.5px;
+}
+nav li a.first{
+    margin-left: 15px;
+}
+/*   Navbar line */
+li a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--navbar-link-left);
+    width: 0%;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    transition: var(--tran);
+}
+li a:hover:after{
+    width: 100%;
+}
+li a.active::after{
+    width: 100%;
 }
 /*   Download    */
 li.down a{
-    color: var(--navbar-link);
+    color: white;
+    border-radius: 7px;
+    position: relative;
+    top: 6.75px;
+    right: 20px;
+    margin-left: 23px;
+    padding: 10px 12px;
+    color: var(--navbar-link-left);
+    transition: var(--tran);
+    border: 1.5px solid var(--navbar-link-left);
 }
 li.down a:hover{
-    color: var(--navbar-link-left);
-    transition: 0.25s;
+    background-color: var(--navbar-link-left);
+    color: white;
 }
-li a:hover {
-color: rgb(208, 203, 203);
-} 
 
 /*      Color Mode Icon     */
+.colorMode{
+    cursor: pointer;
+}
 li.colorMode div.close,
 li.colorMode.active div.open{
     display: inline;

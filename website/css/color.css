@@ -1,10 +1,14 @@
 body{
-    --navbar-BG:#343A40;
+    --navbar-BG:#222221;
     --navbar-link: white;
-    --navbar-link-left: #35a2b8;
+    --navbar-link-hover: var(--navbar-link-left);
+    --navbar-link-left: #18a83d;
+
+    --tran: 0.5s;
 }
 body.light{
     --navbar-BG:#E3F2FD;
     --navbar-link: #343A40;
-    --navbar-link-left: #007bff;
-}
+    --navbar-link-hover: var(--navbar-link-left);
+    --navbar-link-left: #2F8D46;
+}   
