@@ -1,14 +1,19 @@
 body{
-    --navbar-BG:#222221;
+    --main-color:#222221;
+    --second-color: #18a83d;
+    
     --navbar-link: white;
-    --navbar-link-hover: var(--navbar-link-left);
-    --navbar-link-left: #18a83d;
+    --navbar-link-hover: var(--second-color);
+
+    --footer-link: var(--navbar-link);
 
     --tran: 0.5s;
 }
 body.light{
-    --navbar-BG:#E3F2FD;
+    --second-color: #2F8D46;
+
     --navbar-link: #343A40;
-    --navbar-link-hover: var(--navbar-link-left);
-    --navbar-link-left: #2F8D46;
+    --navbar-link-hover: var(--second-color);
+
+    --footer-link: var(--navbar-link);
 }   
