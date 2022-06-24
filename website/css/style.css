@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-color: #000000;
+    background-color: #121212;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -53,56 +53,77 @@ body{
     filter: blur(2px);
     margin-top: 0;
 }
+
+.left-photo-right-text {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.left-text-right-photo {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 .left-photo {
-    width: 500px;
+    width: 600px;
     height: 350px;
     margin-left: 100px;
-    margin-top: 100px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .right-text {
-    width: 500px;
+    width: 600px;
     height: 350px;
     position: relative;
-    margin-left: 900px;
-    margin-top: -350px;
-    background-color: #bcbcbc;
+    margin-left: 920px;
+    margin-top: -22%;
 }
 
 .right-photo {
-    width: 500px;
+    width: 600px;
     height: 350px;
     margin-left: 900px;
-    margin-top: -800px;
-    margin-bottom: 20px;
-    border-radius: 15px;
+    margin-top: -30%;
+    border-radius: 5px;
 }
 
 .left-text {
-    width: 500px;
+    width: 600px;
     height: 350px;
     position: relative;
-    margin-left: 100px;
-    margin-top: 100px;
-    background-color: #bcbcbc;
+    margin-left: 120px;
 }
 
-.right-text h3, .left-text h3 {
+.left-text h1 {
     position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
+    color: #ffffff;
+    font-size: 46px;
+    top: 5%;
+}
+
+.right-text h1 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 46px;
+    top: -5%;
+}
+
+.left-text h3 {
+    position: absolute;
+    top: 28%;
     line-height: 2;
+    color: #e7e7e7;
+    font-size: 22px;
 }
-body{
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+
+.right-text h3 {
+    position: absolute;
+    top: 20%;
+    line-height: 2;
+    color: #e7e7e7;
+    font-size: 22px;
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+
 .container{
     max-width: 1170px;
     margin: auto;
