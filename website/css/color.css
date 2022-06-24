@@ -10,6 +10,7 @@ body{
     --tran: 0.5s;
 }
 body.light{
+    --main-color:#E3F2FD;
     --second-color: #2F8D46;
 
     --navbar-link: #343A40;

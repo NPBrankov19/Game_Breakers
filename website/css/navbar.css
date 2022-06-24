@@ -38,6 +38,9 @@ nav li i{
 nav li i{
     top: 4px;
 }
+nav li.responsive i{
+    display: block;
+}
 nav li a{
     letter-spacing: 0.5px;
 }
@@ -61,7 +64,12 @@ div.left-link li a:hover:after{
 div.left-link li a.active::after{
     width: 100%;
 }
-/*   Download    */
+/*         Image      */
+ul li img{
+    height: 62px;
+    margin: 5px 10px 0 10px;
+}
+/*         Download       */
 li.down a{
     color: white;
     border-radius: 7px;
@@ -78,16 +86,34 @@ li.down a:hover{
     background-color: var(--second-color);
     color: white;
 }
-
+li.downicon{
+    display: none;
+}
+/*      Responsive Button   */
+div.responsive{
+    margin: 5px;
+    margin-right: 10px;
+}
+div.responsive div{
+    position: relative;
+    top: 23px;
+    width: 25px;
+    height: 2.25px;
+    background-color: var(--navbar-link);
+    margin: 5px;
+    border-radius: 10px;
+}
 /*      Color Mode Icon     */
 .colorMode{
     cursor: pointer;
 }
-li.colorMode div.close,
-li.colorMode.active div.open{
-    display: inline;
-}
-li.colorMode div.open,
-li.colorMode.active div.close{
-    display: inline;
+
+
+@media screen and (max-width: 650px) {
+    nav ul li a{
+        display: none;
+    }
+    li.downicon{
+        display: block;
+    }
 }
