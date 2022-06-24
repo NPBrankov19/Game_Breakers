@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
-
 body{
     margin: 0;
-    font-family: 'Rubik', sans-serif;
 }
 nav ul {
     list-style-type: none;
@@ -30,6 +27,9 @@ text-align: center;
 padding: 17px 16px;
 text-decoration: none;
 }
+nav li i{
+    top: 4px;
+}
 nav li a{
     letter-spacing: 0.5px;
 }
@@ -37,7 +37,7 @@ nav li a.first{
     margin-left: 15px;
 }
 /*   Navbar line */
-li a:after{
+div.left-link li a:after{
     content: "";
     position: absolute;
     background-color: var(--navbar-link-left);
@@ -47,10 +47,10 @@ li a:after{
     left: 0;
     transition: var(--tran);
 }
-li a:hover:after{
+div.left-link li a:hover:after{
     width: 100%;
 }
-li a.active::after{
+div.left-link li a.active::after{
     width: 100%;
 }
 /*   Download    */
