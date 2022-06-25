@@ -114,6 +114,7 @@ body{
     line-height: 2;
     color: #e7e7e7;
     font-size: 22px;
+    font-weight: 600;
 }
 
 .right-text h3 {
@@ -122,6 +123,7 @@ body{
     line-height: 2;
     color: #e7e7e7;
     font-size: 22px;
+    font-weight: 600;
 }
 
 .container{
@@ -186,4 +188,113 @@ ul{
 .footer-col .pegi{
     margin-left: 1150px;
     margin-top: -190px;
+}
+
+/* Responsive design */
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+
+    #top-info {
+        top: 250px;
+    }
+
+    #play-btn {
+        border: 2.5px solid #f1f1f1;
+        font-size: 1.5em;
+        top: 600px;
+        width: 30%;
+        height: 9%;
+    }
+
+    #top-photo {
+        width: 185%;
+    }
+
+    .left-photo-right-text {
+        margin-left: 44%;
+        margin-bottom: 60%;
+    }
+
+    .left-text-right-photo {
+        margin-left: 44%;
+        margin-bottom: 60%;
+    }
+
+    .left-photo {
+        margin-left: 100px;
+    }
+
+    .right-text {
+        margin-left: 120px;
+        margin-top: 5%;
+    }
+
+    .right-photo {
+        margin-left: 100px;
+        margin-top: -200%;
+    }
+
+    .left-text {
+        margin-left: 120px;
+        margin-bottom: -80%;
+    }
+
+    .left-text h3 {
+        font-size: 24px;
+    }
+
+    .right-text h3 {
+        font-size: 24px;
+    }
+
+    .footer {
+        width: 185%;
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: var(--navbar-link);
+        text-transform: capitalize;
+        margin-bottom: 35px;   
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: var(--second-color);
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 15px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: var(--footer-link);
+        display: block;
+        transition: all 0.3s ease;
+
+    }
+    .footer-col ul li a:hover{
+        padding-left: 8px;
+        font-weight: 600;
+    }
+    /*subject to adjustment*/
+    .footer-col .pegi{
+        margin-left: 1150px;
+        margin-top: -190px;
+    }
 }

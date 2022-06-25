@@ -117,3 +117,33 @@ div.responsive div{
         display: block;
     }
 }
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    nav ul {
+        padding: 3em;
+    }
+    
+    nav li a,
+    nav li i {
+        font-size: 32px;
+        padding: 30px;
+    }
+    
+    /*   Navbar line */
+    div.left-link li a:after{
+        bottom: -48px;
+        height: 8px;
+    }
+    /*         Image      */
+    ul li img{
+        height: 80px;
+        margin: 20px 10px 0 10px;
+    }
+    /*         Download       */
+    li.down a{
+        top: 10px;
+        font-size: 32px;
+        margin-left: 26px;
+        padding: 14px 16px;
+    }
+}
