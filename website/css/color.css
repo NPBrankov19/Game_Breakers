@@ -1,6 +1,9 @@
 body{
+    --background-color: #121212;
     --main-color:#222221;
     --second-color: #18a83d;
+    --text-color: #ffffff;
+    --heading-color: #e7e7e7;
     
     --navbar-link: white;
     --navbar-link-hover: var(--second-color);
@@ -10,10 +13,13 @@ body{
     --tran: 0.5s;
 }
 body.light{
-    --main-color:#E3F2FD;
-    --second-color: #2F8D46;
+    --background-color: #ffffff;
+    --main-color:#2161b5;
+    --second-color: #70e000;
+    --text-color: #121212;
+    --heading-color: #232323;
 
-    --navbar-link: #343A40;
+    --navbar-link: #f9f9f9;
     --navbar-link-hover: var(--second-color);
 
     --footer-link: var(--navbar-link);
