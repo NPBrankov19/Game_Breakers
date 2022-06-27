@@ -228,6 +228,10 @@ ul{
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
 
+    #top-photo {
+        margin-top: 150px;
+    }
+
     #top-info {
         top: 250px;
     }
